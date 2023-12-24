@@ -36,6 +36,8 @@ import { newUser } from "./generic/8";
 
 //
 
+console.log("isWeekend:", isWeekend);
+
 // // 1 generic
 // console.log("1G - getPromise:", getPromise());
 // // 2 generic

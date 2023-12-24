@@ -4,19 +4,19 @@
 */
 
 enum Days {
-  monday = 0,
-  tuesday = 0,
-  wednesday = 0,
-  thursday = 0,
-  friday = 0,
-  saturday = 1,
-  sunday = 1,
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday,
 }
 
-function isWeekend(value: string): boolean {
-  return Days[value];
+function isWeekend(day: Days): boolean {
+  return day === Days.saturday || day === Days.sunday;
 }
 
-isWeekend("tuesday");
+console.log(isWeekend(Days.saturday));
 
 export { isWeekend };
