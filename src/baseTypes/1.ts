@@ -9,4 +9,4 @@ let callback = (a: number) => {
   return 100 + a;
 };
 
-export {};
+export { age, name, toggle, empty, notInitialize, callback };

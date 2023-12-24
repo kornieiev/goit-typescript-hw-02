@@ -3,8 +3,10 @@
   Використовуйте generics, щоб вказати, що ці об'єкти можуть бути будь-якого типу.
 */
 
-function merge (objA, objB) {
+type Object = any;
+
+function merge<Object>(objA: any, objB: any): Object {
   return Object.assign(objA, objB);
 }
 
-export {}
+export { merge };

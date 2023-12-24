@@ -18,3 +18,5 @@ function isWeekend(value: string): boolean {
 }
 
 isWeekend("tuesday");
+
+export { isWeekend };
